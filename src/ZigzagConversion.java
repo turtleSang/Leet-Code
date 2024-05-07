@@ -6,7 +6,6 @@ public class ZigzagConversion {
             return "";
         }
         List<TypeChar> listChar = new ArrayList<>();
-
         int rowNumber = 1;
         boolean up = true;
         for (int i = 0; i < s.length(); i++) {
@@ -24,6 +23,7 @@ public class ZigzagConversion {
             }
 
         }
+
         listChar.sort(Comparator.comparingInt(o -> o.rowNum));
         String result = "";
         for (TypeChar typeChar: listChar

@@ -7,8 +7,8 @@ public class LeetCode {
 //        String result = ZigzagConversion.convert("PAYPALISHIRING", 3);
 //        System.out.println(result);
 
-        String res = ZigzagConversion2.convert("PAYPALISHIRING", 4);
-        System.out.println(res);
+         String txt = ZigzagConversion2.convert2("AB", 1);
+        System.out.println(txt);
 
     }
 
