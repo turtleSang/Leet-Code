@@ -2,15 +2,18 @@ import java.util.*;
 
 public class ZigzagConversion {
     public static String convert(String s, int numRows) {
+//        Check null String
         if (s.length() == 0){
             return "";
         }
+
         List<TypeChar> listChar = new ArrayList<>();
         int rowNumber = 1;
         boolean up = true;
         for (int i = 0; i < s.length(); i++) {
             TypeChar typeChar = new TypeChar(s.charAt(i), rowNumber);
             listChar.add(typeChar);
+//            update row number to next index
             if (up) {
                 rowNumber++;
             } else {
@@ -23,7 +26,7 @@ public class ZigzagConversion {
             }
 
         }
-
+//      sort char in row num
         listChar.sort(Comparator.comparingInt(o -> o.rowNum));
         String result = "";
         for (TypeChar typeChar: listChar
@@ -33,6 +36,7 @@ public class ZigzagConversion {
         return result;
     }
 
+//    Create a type has char and position of char
     static class TypeChar implements Comparator<TypeChar>{
         char a ;
         int rowNum;
