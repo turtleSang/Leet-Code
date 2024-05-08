@@ -14,8 +14,11 @@ public class LeetCode {
 ////        boolean check = LongestPalindrome.testPalindrome("BAB");
 //        System.out.println(result);
 
-        boolean check = PalindromeNumber.isPalindrome(10);
-        System.out.println(check);
+//        boolean check = PalindromeNumber.isPalindrome(10);
+//        System.out.println(check);
+
+        int[] a = {1,8,6,2,5,4,8,3,7};
+        System.out.println(MostWater.maxArea(a));
 
     }
 
