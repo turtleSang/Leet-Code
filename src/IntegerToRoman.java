@@ -25,7 +25,7 @@ public class IntegerToRoman {
         }
 
         return  result;
-    };
+    }
 
     public static int lengthOfNumber(int number){
         int len = 1;
